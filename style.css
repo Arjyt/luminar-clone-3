@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row ul{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding-top: 50px;
+    color: blue;
+    font-weight: bold;
+}
+.row ul li{
+    list-style: none;
+  
+}
+.row1{
+    width: 100%;
+    height: 700px;
+    background: url(./assets/images.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 30px;
+    padding-bottom: 10px;
+}
+.box{
+    width: 450px;
+    height:100%;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+.box h1{
+    padding-top: 50px;
+}
+.box p{
+    letter-spacing: 2px;
+    font-size: larger;
+    padding-bottom: 20px;
+}
+.box button{
+    color: aliceblue;
+    background-color: rgb(243, 50, 182);
+    padding: 20px;
+    width: 250px;
+    font-weight: bold;
+}
+.row2{
+    gap: 20px;
+    display:flex;
+    flex-direction: row;
+    margin-top: 120px;
+}
+.left{
+    width:50%;
+    height: 350px;
+    background-color:#fff;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 0 rgba(69, 61, 61, 0.833), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+}
+.left p{
+    text-align: center;
+    padding: 30px;
+    padding-top: 10px;
+}
+.left h5{
+    padding-bottom: 10px;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.left h1{
+    font-size: 25px;
+    padding-top: 20px;
+}
+.right{
+    width: 50%;
+    height: 350px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 0 rgba(69, 61, 61, 0.833), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    font-size: 20px;
+}
+.right p{
+    text-align: center;
+    padding: 35px;
+    padding-top: 30px;
+}
+
+.right h5{
+    padding-bottom: 10px;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.right h1{
+    font-size: 25px;
+
+}
+.row3{
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+
+}
+.img {
+    width: 80%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img h1{
+    position: absolute;
+    top: 170px;
+    left: 220px;
+    color: white;
+    transform:  translateY(100%); /* Start off-screen */
+    font-weight: 800;
+    transition: transform 0.5s;
+}
+.img p {
+    display: block;
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%); /* Start off-screen */
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.img:hover h1{
+    transform: translateY(0); /* Move to its final position */
+
+}
+.img:hover p {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0); /* Move to its final position */
+}
+.img:hover img {
+    filter: brightness(0.7); /* Darken the image */
+}
+.row4{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row4 h1{
+    font-weight: 400;
+}
+.row4 .line{
+   border: 2px solid blue;
+    width: 300px;
+}
+.row5 .col-4{
+    width: 400px;
+    height: 250px;
+    text-align: center;
+}
+.row5 .col-4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row5 h1{
+    font-size: 20px;
+    padding-top: 15px;
+    width: 350px;
+}
+.row5 button{
+    margin-top: 70px;
+    color: aliceblue;
+    background-color: rgb(243, 50, 182);
+    padding: 10px;
+    width: 250px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.row7 .col-4{
+    width: 400px;
+    height: 350px;
+    text-align: center;
+}
+.row7 .col-4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.box3{
+    position: relative;
+}
+.row7 .box3 h1{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%); /* Start off-screen */
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    opacity: 1;
+    transition: opacity 0.5s, transform 0.5s;
+    font-size: 30px;
+}
+
+.row7 .box3:hover h1{
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+
+}
+.row7 .box3:hover img{
+    filter: brightness(0.7); /* Darken the image */
+}
+.row7 button{
+    margin-top: 70px;
+    color: aliceblue;
+    background-color: rgb(243, 50, 182);
+    padding: 10px;
+    width: 250px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-bottom: 90px;
+}
+.row8{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.row8 img{
+    width: 150px;
+    padding-top: 50px;
+}
+.email{
+    width: 800px;
+    margin-top: 120px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 15px;
+}
+.box5{
+    display: flex;
+    justify-content: center
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.input input{
+    width: 80%;
+    padding-bottom: 20px;
+}
+.input button{
+    width: 80%;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(63, 63, 179);
+    height: 40px;
+    color: white;
+}
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: rgb(39, 38, 36);
+    color: white;
+    justify-content: space-between;
+    padding:20px;
+    margin-top: 20px;
+}
+.footer ul{
+    display: flex;
+    gap: 20px;
+}
+.footer ul a{
+    text-decoration: none;
+    color:white;
+}
+.footer ul p:hover{
+    color: blue;
+}
+.footer ul a:hover{
+    color: blue;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    padding-top: 20PX;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    color:blue;
+    cursor: pointer;
+}
+.dropdown-content p {
+    margin: 10px 0;
+}
+ li {
+    position: relative;
+}
+.row ul li:hover{
+   color: black;
+   cursor: pointer;
+}
